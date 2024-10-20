@@ -1,6 +1,6 @@
-package com.flexisaf.week3And4.repository;
+package com.flexisaf.week6_depen_injection.repository;
 
-import com.flexisaf.week3And4.model.User;
+import com.flexisaf.week6_depen_injection.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

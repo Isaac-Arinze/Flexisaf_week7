@@ -1,4 +1,4 @@
-package com.flexisaf.week3And4.exception;
+package com.flexisaf.week6_depen_injection.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

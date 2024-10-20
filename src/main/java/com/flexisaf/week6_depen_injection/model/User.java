@@ -1,4 +1,4 @@
-package com.flexisaf.week3And4.model;
+package com.flexisaf.week6_depen_injection.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

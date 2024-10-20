@@ -1,4 +1,4 @@
-package com.flexisaf.week3And4.dto;
+package com.flexisaf.week6_depen_injection.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

@@ -1,9 +1,9 @@
-package com.flexisaf.week3And4.controller;
+package com.flexisaf.week6_depen_injection.controller;
 
-import com.flexisaf.week3And4.dto.UserDto;
-import com.flexisaf.week3And4.service.UserService;
+import com.flexisaf.week6_depen_injection.dto.UserDto;
+import com.flexisaf.week6_depen_injection.service.UserService;
 import jakarta.validation.Valid;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,11 +11,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping("/api")
 public class UserController {
 
-    private final UserService userService;
+
+    @Autowired
+    // Field injection
+    private UserService userService;
+
+    // Constructor injection (preferred for required dependencies)
+    public UserController(UserService userService) {
+        this.userService = userService; // Injected through constructor
+    }
+
+    // Setter injection
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
+    //private final UserService userService; // week 6- dependency injection (flexisaf)
 
     @PostMapping("/create")
     public ResponseEntity<UserDto> createUser(@RequestBody UserDto user) {

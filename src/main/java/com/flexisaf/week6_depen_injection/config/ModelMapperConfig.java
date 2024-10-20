@@ -1,4 +1,4 @@
-package com.flexisaf.week3And4.config;
+package com.flexisaf.week6_depen_injection.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

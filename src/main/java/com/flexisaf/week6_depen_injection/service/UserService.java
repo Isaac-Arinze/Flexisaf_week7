@@ -1,6 +1,6 @@
-package com.flexisaf.week3And4.service;
+package com.flexisaf.week6_depen_injection.service;
 
-import com.flexisaf.week3And4.dto.UserDto;
+import com.flexisaf.week6_depen_injection.dto.UserDto;
 
 
 import java.util.List;
