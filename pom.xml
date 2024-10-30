@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.flexisaf</groupId>
-	<artifactId>week3-4</artifactId>
+	<artifactId>week7</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>week3-4</name>
 	<description>Demo project for Spring Boot</description>

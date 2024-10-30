@@ -1,4 +1,4 @@
-package com.flexisaf.week6_depen_injection;
+package com.flexisaf.week7;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
